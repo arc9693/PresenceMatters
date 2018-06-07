@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>YourAttendanceMatters</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Kaushan+Script" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".bg ">
+  <div class="jumbotron" >
+  <div class="bg">
+  <h1 style=" font-family: 'Allura', cursive;, cursive;">Your Presence Matters!</h1>
+  <p   style=" font-family: 'Yanone Kaffeesatz', sans-serif;">Research shows missing 10 percent of the school year, about 18 days, negatively impacts a student's performance. That figure represents just two days per month.</p>
+  <div id="myNavbar" class="row col-lg-12"><a href="#section1"><button class="btn">Click here to Begin!</button></a>
+</div></div>
+  </div>
+<div id="section1">
+<div class="form">
+  <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg"/></div>
+  <form class="register-form">
+     <input type="text" placeholder="Name" name="Name"/>
+     <div class="custombtn"><label for="Type">Type:</label>
+      <select class="form-control" id="Type">
+        <option value="University">University</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Student">Student</option>
+      </select>
+    </div>
+     <input id="tid" type="text" name="teacherid" placeholder="ID" style="display:none;"/>
+     <input id="sid" type="text" name="studentid" placeholder="RollNO" style="display:none;" />
+     <div  id="uid" class="custombtn" style="display:none;"><label for="universityname">University:</label>
+       <select class="form-control" id="universityname">
+         <option value="NIT dgp">NIT dgp</option>
+        </select></div>
+    <input type="email" placeholder="Email"  name="Email"/>
+    <input type="password" placeholder="password" name="Password"/>
+    <button type="submit">Register</button><br>
+     <p class="message">Already registered? <a href="#" id="caa">Sign In</a></p>
+  </form>
+  <form class="login-form">
+    <input type="email" placeholder="Email"  name="Email"/>
+    <input type="password" placeholder="password" name="Password"/>
+    <button type="Submit">Log in</button>
+    <p class="message">Not registered? <a href="#" onclick="dothis()">Create an account</a></p>
+  </form>
+</div>
+</div>
+<script src="/javascripts/index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
